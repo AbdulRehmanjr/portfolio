@@ -1,32 +1,47 @@
-*{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #ffffff;
+.section-height{
+   height: 100vh;
 }
-.section{
-   height: 120vh;
+.image-box{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top:10px;
+    height: 70vh;
+    background-image: url('../../../assets/hand.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
 }
-.section2{
+.image{
+    position: absolute;
+    top:100px;
+    left:30%;
+    /* border: none;
+    border-radius: 50%;
+    box-shadow: 10px 10px 40px 20px #ffffff; */
+}
+.section2-height{
     height:70vh;
 }
-.bg-image{
-    background-image: url('../../../assets/intro.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .bg-image2{
     background-image: url('../../../assets/section2.png');
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
 }
 .introheading{
     font-size: 60px;
 
 }
+.text-design{
+    background-image: linear-gradient( to right,#0070BA ,#E44D26 ,#E2C430 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+}
 p{
     font-size: 50px;
+    font-family:monoton;
 }
 .intropara{
     font-size: 20px;
@@ -59,4 +74,9 @@ p{
     
     background-color: #ffffff;
     color:#000000;
+}
+h2{
+    color:#000000;
+    font-size: 50px;
+    font-family: monoton;
 }

@@ -1,8 +1,61 @@
-*{
-    background-color: transparent;
-    font-family: 'Times New Roman', Times, serif;
+header{
+  position: sticky;
 }
-nav{
-
-    background-color: #E00707;
+a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+a:hover{
+    color:#0000ff;
+    border-bottom: 2px solid #0000ff;
+}
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+     border:none;
+    border-radius:5px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    font-size: medium;
+    font-weight: bolder;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
+    border-bottom: 3px solid red;
 }
