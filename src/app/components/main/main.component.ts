@@ -7,9 +7,8 @@ import { interval, Subject, Subscription, takeUntil } from 'rxjs';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  data$ = interval(3000)
-  unsub$ = new Subject<void>();
-  value:number = 1000
+  data$ = interval(1000)
+  value:number = 0
   srcUrl:string = "../../../assets/java.png"
   images:string[] =[
   "../../../assets/java.png",
@@ -28,35 +27,30 @@ index!:number
   constructor() { }
 
   ngOnInit(): void {
-      this.change()
+      //this.change()
+      this.change2()
   }
 
+
   /**
-   * change the language logo after given interval
+   * change the language logo after given interval using setTimeout
    */
-  change(){
-    this.data$.pipe(takeUntil(this.unsub$)).subscribe({
-      next:(data:number)=>{
-          console.log(data)    
-          this.index= data%this.images.length
-          this.srcUrl = this.images[this.index];
-          if(data ==10){
-            this.unsub$.next()
-            this.unsub$.complete()
-          }
-      },
-      error:(err)=>{
-        console.log(err)
-      },
-      complete:()=>{
-        this.change()
-      }
-    })
-    // console.log('number',this.value)
-    // console.log('hello')
-    // Number(this.value)
-    // this.value = this.value +1
+  change2(){
+    setInterval(()=>{
+      this.index= this.value%this.images.length
+    this.srcUrl = this.images[this.index];
+    this.value++
     
-    // console.log( this.value)
+    if(this.value == 9){
+      this.value = 0
+    }
+    },3000)
+  }
+  /**
+   * redirect to google Doc
+   */
+  getCV(){
+    console.log('clicked')
+    window.open('https://drive.google.com/file/d/1cCVc4p-f8lDDkguxWksTsgG1MDntM9SU/view?usp=share_link',"_blank")
   }
 }

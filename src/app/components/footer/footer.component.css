@@ -1,15 +1,18 @@
 footer{
    background:  #F9F9FD !important;
+   height: 400px;
 }
 h4{
    font-size: 40px;
 }
-
-
 a:hover i{
    z-index: 10000000;
    transform: translateY(-10px);
 }
 a:hover i{
    transform: translate(-5px,-20px) scale(1.4);
+}
+.logo-box{
+
+   height:150px;
 }
