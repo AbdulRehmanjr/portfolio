@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {CardModule} from 'primeng/card';
-import {DividerModule} from 'primeng/divider';
 import {ProgressBarModule} from 'primeng/progressbar';
+import {GalleriaModule} from 'primeng/galleria';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -23,8 +23,8 @@ import { SkillsComponent } from './components/skills/skills.component';
   imports: [
     BrowserModule,
     CardModule,
-    DividerModule,
-    ProgressBarModule
+    ProgressBarModule,
+    GalleriaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

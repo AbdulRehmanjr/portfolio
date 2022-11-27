@@ -6,6 +6,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent implements OnInit {
+  show:boolean = false
+  images: string[]=[
+    '../../../assets/java.png',
+    '..//../assets/C.png',
+    '../../../assets/spring.png',
+    '../../../assets/angular.png',
+    '../../../assets/jpa.png',
+    '../../../assets/html.png',
+    '../../../assets/css.png',
+    '../../../assets/js.png',
+    '../../../assets/mysql.png',
+  ]
+
+  responsiveOptions:any[] = [
+      {
+          breakpoint: '1024px',
+          numVisible: 5
+      },
+      {
+          breakpoint: '768px',
+          numVisible: 3
+      },
+      {
+          breakpoint: '560px',
+          numVisible: 1
+      }
+  ];
+
   cards:card[] = [
     {
       image:'../../../assets/java.png',
