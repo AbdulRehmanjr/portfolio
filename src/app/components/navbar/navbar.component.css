@@ -1,5 +1,13 @@
 header{
-  position: sticky;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  background-color: antiquewhite;
+  z-index: 10000000000000000000000;
+}
+nav{
+  background-color: antiquewhite;
 }
 a{
     font-family: 'Times New Roman', Times, serif;
