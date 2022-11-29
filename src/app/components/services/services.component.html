@@ -1,26 +1,14 @@
-<div class="row  d-block d-md-none d-lg-none d-xl-none justify-content-center">
-    <p-galleria [value]="images" [responsiveOptions]="responsiveOptions" 
-    style="max-height:400px"
-      [circular]="true"
-      [showThumbnails]="show"
-        [autoPlay]="true" [transitionInterval]="2000"> 
-        <ng-template pTemplate="item" let-image>
-            <img [src]="image" style="width: 200px;" />
-        </ng-template>
-</p-galleria>
-</div>
 
-<div class="row mt-2 justify-content-center d-none d-md-flex flex-direction-row">
-        <div class="col-md-3 mt-2 justify-content-center" *ngFor="let card of cards">
-            <div class="card">
-                <div class="card-img">
-                    <img src="{{card.image}}" alt="image_card">
-                </div>
-                <div class="card-content">
-                    {{card.description}}
-                </div>
-            </div>
-        </div>
+<div class="row">
+  <ng-container *ngFor="let card of cards">
+    <div class="col-lg-3 col-md-6">
+      <div class="feature_item">
+        <img src="{{card.image}}" alt="services">
+        <h4>{{card.heading}}</h4>
+        <p>{{card.description}}</p>
+      </div>
     </div>
-
-
+  
+  </ng-container>
+  
+</div>

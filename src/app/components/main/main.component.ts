@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { interval, Subject, Subscription, takeUntil } from 'rxjs';
+import { interval} from 'rxjs';
 
 @Component({
   selector: 'pot-main',
