@@ -1,19 +1,9 @@
-.features_area {
-    padding-bottom: 170px; }
-    @media (max-width: 1199px) {
-      .features_area {
-        padding-bottom: 50px; } }
-  
-  .feature_item {
+    .feature_item {
     padding: 45px 25px;
     text-align: center;
     background: #f9f9fd;
     cursor: pointer;
-    margin-bottom: 30px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s; }
+    margin-bottom: 30px;}
     .feature_item img {
       margin-bottom: 35px; }
     .feature_item h4 {

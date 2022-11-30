@@ -1,1 +1,7 @@
-<p-progressBar value="90"style="color:red;"></p-progressBar>
+
+<ng-container *ngFor="let status of status">
+    <div class="row">
+        <h6>{{status.name}}</h6>
+        <p-progressBar [value]="status.value"></p-progressBar>
+    </div>
+</ng-container>

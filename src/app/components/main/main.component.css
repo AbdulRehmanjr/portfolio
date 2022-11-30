@@ -18,33 +18,36 @@
     left:30%;
 }
 .section2-height{
-    height: 900px;
+    height: fit-content;
 }
-.intro{
-    position: relative;
-    top: 100px;
+.section3-height{
+    height: fit-content;
 }
-
 p{
     font-size: 20px;
-    font-family: 'Sevillana', cursive;
-    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
     
 }
 .name-heading{
     font-size: 60px;
-    font-family: 'Sevillana', cursive;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 600;
     color: red;
 }
 
 .detail{
     font-size: 40px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+.name{
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 600;
 }
 .intropara{
-    font-size: 30px;
+    font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 100;
 }
@@ -54,8 +57,6 @@ p{
     background-clip: text;
     color:transparent;
 }
-
-
 .btn{
     width:150px;
     height: 55px;
@@ -71,6 +72,6 @@ p{
 }
 h2{
     color:#000000;
-    font-size: 30px;
-    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

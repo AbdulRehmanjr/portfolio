@@ -1,67 +1,87 @@
 <main>
     <div class="container-fluid">
-        <div class="row section-height">
+        <div class="row section-height" id="home">
             <section class="d-block">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="row mt-5">
-                            <div class="col-md-8 offset-1">
+                            <div class="col-lg-8 offset-1">
                                 <p class="introheading">Hello! I am</p>
-                                <p>Abdul Rehman</p>
-                                <p class="detail">I am <span class="text-design">Full Stack Web Developer</span>.</p>
+                                <p class="name">Abdul Rehman</p>
+                                <p class="detail">I am Full Stack Web Developer.</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 offset-1 mt-2">
-                                <button class="btn" (onClick)="getCV()">
+                            <div class="col-lg-3 offset-1 mt-2">
+                                <button class="btn" (click)="getCV()">
                                     Get CV
                                 </button>
                             </div>
-                            <div class="col-md-3  offset-1 mt-2">
+                            <div class="col-lg-3  offset-1 mt-2">
                                 <button class="btn">
                                     Hire Me
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6  d-none d-md-block image-box">
+                    <div class="col-lg-6  d-none d-lg-block image-box">
                         <img class="image" src="{{srcUrl}}" alt="language images" width="150px" height="150px;">
                     </div>
                 </div>
             </section>
         </div>
-        <div class="row section2-height" data-aos="zoom-in-up" data-aos-duration="2000">
-            <div class="col-md-6 d-none d-md-block">
-                <img src="../../../assets/intro.png" alt="intro image" height="600px">
-            </div>
-            <div class="col-md-6 d-md-block">
-                <div class="intro">
-                    <div class="row">
-                        <h2>About me</h2>
-                        <p class="intropara text-start">
-                            My name is Abdul Rehman. I am a Full Stack Web Developer.
-                            I'm passionate about my career and I believe in keeping myself updated with new
-                            Frontend trends and techniques, So that I can help my customers by providing them
-                            with the best possible solutions.
-                            I use the best website development tools and frameworks to create quality websites.
-                            So if you're looking for someone who can make your vision come to life, you've come
-                            to the right place!
-                        </p>
+        <div class="row section2-height" data-aos="zoom-in-up" data-aos-duration="2000" id="about">
+            <section class="d-block">
+                <div class="row">
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <img src="../../../assets/intro.png" alt="intro image" height="600px">
                     </div>
-                    <div class="row justify-content-center">
-                        <button class="btn">
-                            Get CV
-                        </button>
+                    <div class="col-lg-6 d-lg-block">
+                        <div class="intro">
+                            <div class="row">
+                                <h2>About me</h2>
+                                <p class="intropara text-start">
+                                    My name is Abdul Rehman. I am a Full Stack Web Developer.
+                                    I'm passionate about my career and I believe in keeping myself updated with new
+                                    Frontend trends and techniques, So that I can help my customers by providing them
+                                    with the best possible solutions.
+                                    I use the best website development tools and frameworks to create quality websites.
+                                    So if you're looking for someone who can make your vision come to life, you've come
+                                    to the right place!
+                                </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <button class="btn" (click)="getCV()">
+                                    Get CV
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-        <div class="row section2-height" data-aos="zoom-in-right" data-aos-duration="2000">
-            <h2 class="text-center">Services Offer</h2>
-            <p class="text-center">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente omnis eveniet sint, nostrum libero ab enim. Optio qui facere aliquid debitis, voluptatibus saepe, corrupti animi tempora, unde exercitationem assumenda! Rem!
-            </p>
-            <pot-services></pot-services>
+        <div class="row section3-height" data-aos="zoom-in-right" data-aos-duration="2000" id="service">
+            <section class="d-block">
+                <div class="d-sm-block">
+                    <h2 class="text-center">Services Offer</h2>
+                    <pot-services></pot-services>
+                </div>
+            </section>
+        </div>
+        <div class="row section2-height" id="skill">
+            <section class="d-block">
+                <div class="row">
+                    <h2 class="text-center">Skills</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <img src="../../../assets/skills/skills.jpg" alt="intro image" width="100%">
+                    </div>
+                    <div class="col-lg-6 d-lg-block">
+                        <pot-skills></pot-skills>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </main>

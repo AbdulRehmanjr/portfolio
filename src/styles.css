@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 .global_bg{
  background-color: #ffffff;
 }
